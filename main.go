@@ -1,4 +1,4 @@
-package main
+package chainlink
 
 import (
 	"fmt"
@@ -19,6 +19,10 @@ func init() {
 
 func main() {
 	Run(NewProductionClient(), os.Args...)
+}
+
+func Start(pwdfile, apicredentials string) {
+	Run(NewProductionClient(), "ChainlinkMobile", "node", "-p", pwdfile, "-a", apicredentials)
 }
 
 // Run runs the CLI, providing further command instructions by default.

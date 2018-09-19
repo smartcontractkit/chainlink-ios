@@ -1,0 +1,1 @@
+gomobile bind -target ios -v -o ~/workspace/ChainlinkMobile/Chainlink.framework
